@@ -1,0 +1,32 @@
+http:
+  GET:
+    "/users":
+      limit: 1
+      period: 5
+      block_for: 5
+  POST:
+    "/users":
+      limit: 1
+      period: 5
+      block_for: 5
+  DELETE:
+    "/users":
+      limit: 1
+      period: 5
+      block_for: 5
+
+graphql:
+  query:
+    users:
+      limit: 1
+      period: 5
+      block_for: 5
+  mutation:
+    createUser:
+      limit: 1
+      period: 5
+      block_for: 5
+    deleteUsers:
+      limit: 1
+      period: 5
+      block_for: 5
