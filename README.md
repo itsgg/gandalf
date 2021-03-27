@@ -1,6 +1,6 @@
 # Gandalf
 
-A simple middleware for a simple graphql/REST app using rack middleware on Sinatra.
+A simple rack middleware based rate limiter for REST and GraphQL.
 
 ![Alt Text](./gandalf.gif?raw=true)
 
