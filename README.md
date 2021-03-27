@@ -60,6 +60,41 @@ http post :#{PORT}/graphql query='mutation DeleteUsers { deleteUsers { data } }'
 
 Tweak the settings in gandalf.yml and try different operations like
 
+```yaml
+http:
+  GET:
+    "/users":
+      limit: 1
+      period: 5
+      block_for: 5
+  POST:
+    "/users":
+      limit: 1
+      period: 5
+      block_for: 5
+  DELETE:
+    "/users":
+      limit: 1
+      period: 5
+      block_for: 5
+
+graphql:
+  query:
+    users:
+      limit: 1
+      period: 5
+      block_for: 5
+  mutation:
+    createUser:
+      limit: 1
+      period: 5
+      block_for: 5
+    deleteUsers:
+      limit: 1
+      period: 5
+      block_for: 5
+```
+
 ```bash
 rake http:post
 rake http:get
