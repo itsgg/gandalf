@@ -11,7 +11,7 @@ brew install httpie
 ## Running
 
 ```bash
-bundle exec shotgun config.ru
+./start
 ```
 
 ## API
